@@ -183,6 +183,7 @@ Return ONLY JSON.`;
     const { data: inserted, error: insErr } = await context.supabase
       .from("outfits")
       .insert({
+        user_id: context.userId,
         occasion: data.occasion,
         title: plan.title,
         notes: plan.notes,
