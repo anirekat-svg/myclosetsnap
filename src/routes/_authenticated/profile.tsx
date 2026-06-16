@@ -53,7 +53,7 @@ function ProfilePage() {
         </p>
         <p className="mt-2 font-display text-2xl">Unlimited closet & travel packing</p>
         <p className="mt-1 text-sm text-primary-foreground/70 text-pretty">
-          Everyone gets the full experience while we test. €4.99/month later.
+          Everyone gets the full experience while we test. €0.99/month later.
         </p>
       </section>
 
