@@ -75,9 +75,10 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
+      { name: "google-site-verification", content: "kdnbzOUTwx7gDnM5wpfuD9eV0px7kPyDWMBH_qbGMMs" },
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
-      { title: "ClosetSnap — Your wardrobe, styled by AI" },
+      { title: "ClosetSnap – Your wardrobe, styled by AI" },
       {
         name: "description",
         content:
