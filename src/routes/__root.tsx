@@ -92,6 +92,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "ClosetSnap — Your wardrobe, styled by AI" },
+      { name: "description", content: "Your AI wardrobe assistant. Upload your clothes, get instant outfit recommendations, and discover new looks from the pieces you already own" },
+      { property: "og:description", content: "Your AI wardrobe assistant. Upload your clothes, get instant outfit recommendations, and discover new looks from the pieces you already own" },
+      { name: "twitter:description", content: "Your AI wardrobe assistant. Upload your clothes, get instant outfit recommendations, and discover new looks from the pieces you already own" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/f207fb92-6ff6-4914-a437-dfca8c52557f" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/f207fb92-6ff6-4914-a437-dfca8c52557f" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
