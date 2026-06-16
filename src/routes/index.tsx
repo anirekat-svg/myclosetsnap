@@ -63,17 +63,41 @@ function Landing() {
         </div>
       </section>
 
-      <section id="how" className="mx-auto max-w-4xl px-6 py-20">
-        <div className="grid gap-6 sm:grid-cols-3">
+      <section id="how" className="mx-auto max-w-5xl px-6 py-20">
+        <p className="text-center text-xs uppercase tracking-[0.25em] text-muted-foreground">How it works</p>
+        <div className="mt-10 grid gap-6 sm:grid-cols-3">
           {[
-            { n: "01", t: "Snap your clothes", d: "Add photos of tops, bottoms, dresses and shoes. We categorize them automatically." },
-            { n: "02", t: "Pick the occasion", d: "Work, casual, date, dinner or travel — your closet, the right outfit." },
-            { n: "03", t: "Wear it", d: "Save the looks you love. Get a new daily edit every morning." },
+            {
+              n: "01",
+              t: "Snap your clothes",
+              d: "Take quick photos of each item — tops, bottoms, dresses, shoes, jackets. Our AI automatically tags the category, color, and season so everything stays organized without you typing a thing.",
+              bullets: ["Works with any phone camera", "Auto-removes messy backgrounds", "Organized by category and color"],
+            },
+            {
+              n: "02",
+              t: "Pick the occasion",
+              d: "Tell us where you're going — work, casual day out, date night, dinner with friends, or a weekend trip. ClosetSnap mixes and matches pieces you already own into a complete outfit.",
+              bullets: ["Smart outfit pairing from your closet", "Matches weather and season", "Suggests shoes and accessories"],
+            },
+            {
+              n: "03",
+              t: "Wear it",
+              d: "Save the outfits you love to your favorites. Wake up to a fresh daily suggestion every morning, so you spend less time deciding and more time feeling confident.",
+              bullets: ["Save favorites for one-tap access", "Daily outfit drop each morning", "Track what you actually wore"],
+            },
           ].map((s) => (
-            <div key={s.n} className="rounded-2xl bg-surface p-6 ring-1 ring-black/5">
+            <div key={s.n} className="rounded-2xl bg-surface p-7 ring-1 ring-black/5">
               <p className="font-display text-2xl text-muted-foreground">{s.n}</p>
               <h3 className="mt-3 text-base font-semibold">{s.t}</h3>
-              <p className="mt-2 text-sm text-muted-foreground text-pretty">{s.d}</p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground text-pretty">{s.d}</p>
+              <ul className="mt-5 space-y-2">
+                {s.bullets.map((b) => (
+                  <li key={b} className="flex items-start gap-2 text-sm text-muted-foreground">
+                    <span className="mt-1.5 block size-1 rounded-full bg-foreground/40" />
+                    <span className="text-pretty">{b}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
