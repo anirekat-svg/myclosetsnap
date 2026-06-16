@@ -71,7 +71,7 @@ function Landing() {
             { n: "03", t: "Wear it", d: "Save the looks you love. Get a new daily edit every morning." },
           ].map((s) => (
             <div key={s.n} className="rounded-2xl bg-surface p-6 ring-1 ring-black/5">
-              <p className="font-display text-2xl italic text-muted-foreground">{s.n}</p>
+              <p className="font-display text-2xl text-muted-foreground">{s.n}</p>
               <h3 className="mt-3 text-base font-semibold">{s.t}</h3>
               <p className="mt-2 text-sm text-muted-foreground text-pretty">{s.d}</p>
             </div>
