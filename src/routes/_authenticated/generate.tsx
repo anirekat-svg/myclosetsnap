@@ -139,7 +139,7 @@ function GeneratePage() {
       {result && (
         <section className="mt-8 rounded-3xl bg-surface p-4 ring-1 ring-black/5">
           <div className="px-2 pb-4">
-            <p className="font-display text-3xl italic">{result.title}</p>
+            <p className="font-display text-3xl">{result.title}</p>
             <p className="mt-1 text-sm text-muted-foreground text-pretty">{result.notes}</p>
           </div>
 

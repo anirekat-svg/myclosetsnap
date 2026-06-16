@@ -149,7 +149,7 @@ function HomePage() {
                 ))}
                 {latest.data.title && (
                   <div className="px-2 pt-3">
-                    <p className="font-display text-2xl italic">{latest.data.title}</p>
+                    <p className="font-display text-2xl">{latest.data.title}</p>
                     {latest.data.notes && (
                       <p className="mt-1 text-sm text-muted-foreground text-pretty">
                         {latest.data.notes}
